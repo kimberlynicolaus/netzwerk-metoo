@@ -1,7 +1,7 @@
 # netzwerk-metoo
 
 library(igraph)
-mt <- read.csv("edgelist_kim.csv", header=TRUE)
+mt <- read.csv("https://raw.githubusercontent.com/kimberlynicolaus/netzwerk-metoo/master/edgelist_kim.csv", header=TRUE)
 is.data.frame(mt)
 mt
 mti <- graph.data.frame(mt, directed = FALSE)
@@ -9,7 +9,7 @@ class(mti)
 mti
 plot(mti)
 
-nodes <- read.csv("nodelist_kim.csv", header=T, as.is=T, sep = ",")
+nodes <- read.csv("https://raw.githubusercontent.com/kimberlynicolaus/netzwerk-metoo/master/nodelist_kim.csv", header=T, as.is=T, sep = ",")
 
 # prüft, ob alle Variablen eingelesen wurden
 head(mti)
