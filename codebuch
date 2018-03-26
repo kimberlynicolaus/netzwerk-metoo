@@ -1,0 +1,31 @@
+Codebuch Netzwerkanalyse metoo
+
+Anja Keinath, Isabel Mayer, Sonja Lingg, Merve Kayikci, Max Ehrenfeld, Kimberly Nicolaus
+
+Das Netzwerk ist ein ungerichtetes two-mode Netzwerk. 
+
+
+EDGELIST
+
+from
+definiert das Ressort, in dem über metoo berichtet wurde
+
+to
+definiert den Journalisten, der den jeweiligen Artikel im Ressort geschrieben hat
+
+week
+definiert, in welcher Woche der Artikel veröffentlicht wurde Werte 1 bis 22 stehen für die KW 42 im Jahr 2017 bis KW 11 im Jahr 2018
+
+NODELIST
+
+id
+eindeutige Identifikation jedes einzelnen Ressorts und Journalisten (Nachname)
+
+name
+vollständiger Name des Journalisten oder der Nachrichten-Agentur. Kürzel von Journalisten werden ideentisch eingegeben.
+
+sex
+female = 1, male = 2, not available = 3
+
+type
+Unterscheidung zwischen Journalist und Ressort. Journalist = 0, Ressort = 1
