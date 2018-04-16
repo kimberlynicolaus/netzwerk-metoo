@@ -65,6 +65,6 @@ mt1
 # prüft, ob tatsächlich nur das Attribut für die Woche 1 gezogen wird
 edge_attr(mt1)
 
-# Versuch nur die Ressorts zu beschriften
-degree(mt1, mode = "all")
-plot(mt1, vertex.label = ifelse(degree(mt1) > 1, V(mt1)$name, NA))
+# Knotengröße nach degree verändern und versuchen die Ressorts zu beschriften
+degree(mt1, mode="in", normalized = TRUE)
+plot(mt1, vertex.size=degree(mt1, mode="in")*3,  vertex.label = ifelse(degree(mt1) > 1, V(mt1)$name, NA), layout = layout_with_fr, vertex.label=NA, main="Mee-Too Woche 1", edge.arrow.size=.1)
