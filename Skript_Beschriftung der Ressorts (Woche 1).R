@@ -67,4 +67,4 @@ edge_attr(mt1)
 
 # Knotengröße nach degree verändern und versuchen die Ressorts zu beschriften
 degree(mt1, mode="in", normalized = TRUE)
-plot(mt1, vertex.size=degree(mt1, mode="in")*3,  vertex.label = ifelse(degree(mt1) > 1, V(mt1)$name, NA), layout = layout_with_fr, vertex.label=NA, main="Mee-Too Woche 1", edge.arrow.size=.1)
+plot(mt1, vertex.size=degree(mt1, mode="in")*3,  vertex.label = ifelse(degree(mt1) > 1, V(mt1)$name, NA), layout = layout_with_fr, vertex.label=NA, main="#metoo Woche 1", edge.arrow.size=.1)
