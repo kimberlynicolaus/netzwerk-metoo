@@ -2,7 +2,7 @@ Codebuch Netzwerkanalyse metoo
 
 Anja Keinath, Isabel Mayer, Sonja Lingg, Merve Kayikci, Max Ehrenfeld, Kimberly Nicolaus
 
-Das Netzwerk ist ein ungerichtetes two-mode Netzwerk. 
+Das Gesamtnetzwerk ist ein ungerichtetes two-mode Netzwerk. 
 
 
 EDGELIST
@@ -29,3 +29,24 @@ female = 1, male = 2, not available = 3
 
 type
 Unterscheidung zwischen Journalist und Ressort. Journalist = 0, Ressort = 1
+
+
+Codebuch Netzwerkanalyse Starautoren
+
+EDGELIST
+
+from
+definiert den Follower, der einem Starautor folgt 
+definiert den Starautor, der einem Follower folgt
+
+to
+definiert den Follower, der einem Starautor folgt 
+definiert den Starautor, der einem Follower folgt
+
+NODELIST
+
+id
+eindeutige Identifikation jedes einzelnen Followers und Starautors (Twittername)
+
+type
+Unterscheidung zwischen Follower und Starautor. Follower = 0, Starautor = 1
