@@ -33,6 +33,9 @@ Unterscheidung zwischen Journalist und Ressort. Journalist = 0, Ressort = 1
 
 Codebuch Netzwerkanalyse Starautoren
 
+Das Gesamtnetzwerk der Starautoren ist ein gerichtetes two-mode Netzwerk. 
+
+
 EDGELIST
 
 from
